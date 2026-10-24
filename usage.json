@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "package": "@x12i/static-memorix-docs",
+  "packageVersion": "1.2.0",
+  "npmUrl": "https://www.npmjs.com/package/@x12i/static-memorix-docs",
+  "usageRepository": "https://github.com/x12i-sdk/static-memorix",
+  "sourceRepository": "https://github.com/x12i/static-memorix",
+  "sourceCommit": "dc9a6c7fd7499fa90009c787f83cea182e8c4040",
+  "sourcePackageDirectory": "packages/static-memorix-docs",
+  "example": {
+    "title": "List the bundled guides and read a use case",
+    "entrypoint": "src/index.mjs",
+    "command": "npm start",
+    "requiresCredentials": false,
+    "validation": "passed",
+    "validatedAt": "2026-10-24T13:04:44.812031+00:00",
+    "isolatedInstallation": true,
+    "sourceSha256": "8b6a965a050b0e8091e3161a5aa1ab964f395309bc2a64c3a319867679645d91",
+    "manifestSha256": "7593b1032630fe58926dbce043d064c054d29a60ad1cdb33419060dbfeb4b2b3"
+  },
+  "npmPackages": [
+    "@x12i/static-memorix-docs"
+  ],
+  "publisher": "x12i-publisher[bot]"
+}
