@@ -2,14 +2,15 @@
   "name": "static-memorix-usage",
   "version": "1.0.0",
   "private": true,
-  "description": "Usage example for @x12i/static-memorix-docs: list the bundled guides and read a use case.",
+  "description": "Tested consuming examples for @x12i/static-memorix-docs, @x12i/static-memorix",
   "type": "module",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
     "start": "node src/index.mjs",
-    "check": "node --check src/index.mjs"
+    "check": "node --check src/index.mjs",
+    "example:static-memorix": "node src/static-memorix-example.mjs"
   },
   "devDependencies": {
     "@x12i/static-memorix-docs": "1.2.0"
@@ -18,5 +19,8 @@
     "type": "git",
     "url": "https://github.com/x12i-sdk/static-memorix.git"
   },
-  "homepage": "https://www.npmjs.com/package/@x12i/static-memorix-docs"
+  "homepage": "https://www.npmjs.com/package/@x12i/static-memorix-docs",
+  "dependencies": {
+    "@x12i/static-memorix": "3.5.1"
+  }
 }

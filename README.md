@@ -31,3 +31,20 @@ This is a documentation knowledge SDK. It is installed as a development dependen
 - [Reviewed package source](https://github.com/x12i/static-memorix/tree/dc9a6c7fd7499fa90009c787f83cea182e8c4040/packages/static-memorix-docs)
 
 The `package.json` in this repository is private to prevent accidental publication of the example application under an npm package name.
+
+## @x12i/static-memorix runtime example
+
+Static mock server providing full API parity for the Memorix Explorer API and /api/metadata.
+
+Build the local mock service and inject a health request. This example consumes `@x12i/static-memorix@3.5.1`.
+
+```sh
+npm install --ignore-scripts
+npm run example:static-memorix
+```
+
+Source: [`src/static-memorix-example.mjs`](src/static-memorix-example.mjs). The original documentation-package example remains available through `npm start`. Both examples are checked independently.
+
+## Runtime fixture scope
+
+This runtime consumer uses injected responses, an isolated DOM, temporary files or pure data helpers. It does not contact a live service, launch a browser, query MongoDB or create production metadata. UI/Data Mapper checks its package-normalization helper through the advertised mapper subpath and a browser bundle; CSS is excluded because the fixture renders no UI. Lattix checks its client subpath rather than mounting a graph component.
